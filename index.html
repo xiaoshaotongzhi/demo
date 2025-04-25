@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Goal Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Goal Tracker</h1>
+
+    <form id="goal-form">
+      <label for="description">Fitness Goal</label>
+      <input type="text" id="description" name="description" placeholder="Enter fitness goal" required />
+
+      <label for="category">Category</label>
+      <select id="category" name="category">
+        <option value="Strength Training">Strength Training</option>
+        <option value="Cardio">Cardio</option>
+        <option value="Flexibility">Flexibility</option>
+        <option value="Mobility">Mobility</option>
+        <option value="Yoga">Yoga</option>
+      </select>
+
+      <label for="repetitions">Repetitions</label>
+      <input type="text" id="repetitions" name="repetitions" placeholder="Enter repetitions" required />
+
+      <button type="submit" id="add-goal-btn">Add Goal</button>
+    </form>
+
+    <div class="goal-list">
+      <ul class="todo__list">
+        
+        <li class="goal">
+          Run 5 kilometers - <strong>Cardio</strong> (30 minutes)
+          <button class="achieve-btn">Mark as Achieved</button>
+        </li>
+        <li class="goal">
+          Do 20 push-ups - <strong>Strength Training</strong> (20 repetitions)
+          <button class="achieve-btn">Mark as Achieved</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="module" src="Controller.js"></script>
+</body>
+</html>
